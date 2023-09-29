@@ -28,7 +28,8 @@
 
 (def linked-words-memo (memoize linked-words))
 
-(defn dfs-step [dfs-state] "advance depth first search one step"
+(defn dfs-step [dfs-state]
+  "advance depth first search one step"
   (let [{path :path
          visited :visited
          target :target} dfs-state
